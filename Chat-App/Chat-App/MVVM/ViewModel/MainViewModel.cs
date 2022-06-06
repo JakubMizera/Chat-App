@@ -62,35 +62,35 @@ namespace Chat_App.MVVM.ViewModel
             {
                 UserName = "Tomek",
                 UserNameColor = "#409aff",
-                ImageSource = "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=",
+                ImageSource = "https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png",
                 Message = "Test",
                 Time = DateTime.Now,
                 IsNativeOrigin = false,
                 TheFirstMessage = true
             });
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 Messages.Add(new MessageModel()
                 {
                     UserName = "Tomek",
                     UserNameColor = "#409aff",
-                    ImageSource = "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=",
-                    Message = "Test",
+                    ImageSource = "https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png",
+                    Message = "Jestem Tomek",
                     Time = DateTime.Now,
                     IsNativeOrigin = false,
                     TheFirstMessage = false
                 });
             }
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Messages.Add(new MessageModel()
                 {
                     UserName = "Romek",
                     UserNameColor = "#409aff",
-                    ImageSource = "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=",
-                    Message = "Test dla Romka",
+                    ImageSource = "https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg",
+                    Message = "A ja Romek",
                     Time = DateTime.Now,
                     IsNativeOrigin = true
                 });
@@ -100,21 +100,27 @@ namespace Chat_App.MVVM.ViewModel
             {
                 UserName = "Tomek",
                 UserNameColor = "#409aff",
-                ImageSource = "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=",
+                ImageSource = "https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png",
                 Message = "Last",
                 Time = DateTime.Now,
                 IsNativeOrigin = true,
             });
 
-            for (int i = 0; i < 5; i++)
+          
+            Contacts.Add(new ContactModel
             {
-                Contacts.Add(new ContactModel
-                {
-                    UserName = $"Tomek {i}",
-                    ImageSource = "https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=",
-                    Messages = Messages
-                });
-            }
+                UserName = $"Tomek",
+                ImageSource = "https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png",
+                Messages = Messages
+            });
+
+
+            Contacts.Add(new ContactModel
+            {
+                UserName = $"Romek",
+                ImageSource = "https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg",
+                Messages = Messages
+            });
 
         }
     }
