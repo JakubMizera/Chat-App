@@ -26,7 +26,7 @@
                                     CornerRadius="25"/>
 
                             <StackPanel>
-                                <Label Content="{Binding Username}"
+                                <Label Content="{Binding UserName}"
                                        Foreground="White"/>
                                 <Label Content="{Binding LastMessage}"
                                        Foreground="Gray"
