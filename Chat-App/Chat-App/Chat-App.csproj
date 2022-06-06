@@ -9,7 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Icons\" />
+    <None Remove="Icons\camera-solid.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icons\camera-solid.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\View\" />
   </ItemGroup>
 

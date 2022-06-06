@@ -121,7 +121,8 @@
                 <RowDefinition Height="70"/>
             </Grid.RowDefinitions>
 
-            <Border>
+            <Border BorderBrush="#2F3136"
+                    BorderThickness="0,0,0,2">
                 <Grid HorizontalAlignment="Stretch"
                       Margin="8">
                     <Label Content="@UserName"
@@ -133,7 +134,12 @@
                                 HorizontalAlignment="Right">
                         <Image Width="20" Height="20"
                                RenderOptions.BitmapScalingMode="Fant"
-                               Margin="5,0,5,0"/>
+                               Margin="5,0,5,0"
+                               Source="./Icons/phone-receiver-silhouette.png"/>
+                        <Image Width="20" Height="20"
+                               RenderOptions.BitmapScalingMode="Fant"
+                               Margin="5,0,5,0"
+                               Source="./Icons/video-camera.png"/>
                     </StackPanel>
                 </Grid>
             </Border>
